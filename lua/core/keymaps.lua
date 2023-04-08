@@ -1,21 +1,14 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-vim.opt.backspace = '2'
-vim.opt.showcmd = true
-vim.opt.laststatus = 2
-vim.opt.autowrite = true
-vim.opt.cursorline = true
-vim.opt.autoread = true
-vim.opt.number = true
-vim.opt.relativenumber = true
-
--- use spaces for tabs and whatnot
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.shiftround = true
-vim.opt.expandtab = true
-
+-- Clear search
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+
+-- Close buffer
 vim.keymap.set('n', '<leader>c', ':bd<CR>')
 
+-- Rebind window command
+vim.keymap.set('n', '<leader>w', '<c-w>', { noremap = true })
+
+-- Save and source file
+vim.keymap.set('n', '<leader>s', ':w<Bar>so<CR>', { noremap = true })
