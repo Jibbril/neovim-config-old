@@ -1,0 +1,2 @@
+require('gruvbox')
+require('onedark')
