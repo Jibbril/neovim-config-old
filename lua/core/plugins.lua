@@ -27,16 +27,16 @@ return require('packer').startup(function(use)
 
   -- Telescope
   use {
-    'nvim-telescope/telescope.nvim', 
+    'nvim-telescope/telescope.nvim',
     tag = '0.1.1',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
     use {
-    'nvim-telescope/telescope-fzf-native.nvim', 
-    run = 'make' 
+    'nvim-telescope/telescope-fzf-native.nvim',
+    run = 'make'
   }
-  
+
   -- LSP
   use {
     'VonHeikemen/lsp-zero.nvim',
@@ -58,7 +58,9 @@ return require('packer').startup(function(use)
     {'L3MON4D3/LuaSnip'},     -- Required
 
     -- Add Snippets
-    
+
+    -- Debug Adapter Protocol
+    use 'mfussenegger/nvim-dap'
   }
 }
 
