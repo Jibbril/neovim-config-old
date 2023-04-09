@@ -32,7 +32,7 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-    use {
+  use {
     'nvim-telescope/telescope-fzf-native.nvim',
     run = 'make'
   }
@@ -45,25 +45,27 @@ return require('packer').startup(function(use)
       -- LSP Support
       {'neovim/nvim-lspconfig'},             -- Required
       {                                      -- Optional
-      'williamboman/mason.nvim',
-      run = function()
-        pcall(vim.cmd, 'MasonUpdate')
-      end,
-    },
-    {'williamboman/mason-lspconfig.nvim'}, -- Optional
+        'williamboman/mason.nvim',
+        run = function()
+          pcall(vim.cmd, 'MasonUpdate')
+        end,
+      },
+      {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
-    -- Autocompletion
-    {'hrsh7th/nvim-cmp'},     -- Required
-    {'hrsh7th/cmp-nvim-lsp'}, -- Required
-    {'L3MON4D3/LuaSnip'},     -- Required
+      -- Autocompletion
+      {'hrsh7th/nvim-cmp'},     -- Required
+      {'hrsh7th/cmp-nvim-lsp'}, -- Required
+      {'L3MON4D3/LuaSnip'},     -- Required
 
-    -- Add Snippets
+      -- Add Snippets
 
-    -- Debug Adapter Protocol
-    use 'mfussenegger/nvim-dap'
+    }
   }
-}
 
+  -- Debug Adapter Protocol
+  -- use 'mfussenegger/nvim-dap'
+  -- use 'neovim/nvim-lspconfig'
+  -- use 'rcarriga/nvim-dap-ui'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

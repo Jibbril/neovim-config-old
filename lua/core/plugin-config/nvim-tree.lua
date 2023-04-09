@@ -4,6 +4,6 @@ vim.g.loaded_netrwPlugin = 1
 require('nvim-tree').setup()
 require('nvim-web-devicons').setup()
 
-vim.keymap.set('n', '<leader>e', ':NvimTreeFindFileToggle<CR>')
-vim.keymap.set('n', '<leader>E', '::NvimTreeFocus<CR>')
+vim.keymap.set('n', '<leader>E', ':NvimTreeFindFileToggle<CR>')
+vim.keymap.set('n', '<leader>e', '::NvimTreeFocus<CR>')
 
