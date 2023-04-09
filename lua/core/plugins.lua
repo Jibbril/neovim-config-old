@@ -13,7 +13,6 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'ellisonleao/gruvbox.nvim'
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
@@ -21,6 +20,10 @@ return require('packer').startup(function(use)
   use 'theprimeagen/harpoon'
   use 'mbbill/undotree'
   use 'tpope/vim-fugitive'
+
+  -- Themes 
+  -- use 'ellisonleao/gruvbox.nvim'
+  use 'navarasu/onedark.nvim'
 
   -- Telescope
   use {
@@ -55,6 +58,7 @@ return require('packer').startup(function(use)
     {'L3MON4D3/LuaSnip'},     -- Required
 
     -- Add Snippets
+    
   }
 }
 

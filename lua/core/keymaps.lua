@@ -29,13 +29,17 @@ vim.keymap.set('n', '<leader>y', '"+y')
 vim.keymap.set('n', '<leader>Y', '"+Y')
 vim.keymap.set('v', '<leader>y', '"+y')
 
+-- Paste from clipboard
+vim.keymap.set('n', '<leader>p', '"*p')
 
 --  Delete to void
 vim.keymap.set('n', '<leader>d', '"_d')
 vim.keymap.set('v', '<leader>d', '"_d')
 
 -- Rename word under cursor
--- vim.keymap.set('n', '<leader>rn', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+vim.keymap.set('n', '<leader>rn', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- Add Empty line below
--- vim.keymap.set('n', '<CR>', 'o<esc>')
+vim.keymap.set('n', '<CR>', 'o<esc>', { noremap = true })
+
+
