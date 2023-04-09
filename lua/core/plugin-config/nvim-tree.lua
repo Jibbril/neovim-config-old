@@ -5,4 +5,5 @@ require('nvim-tree').setup()
 require('nvim-web-devicons').setup()
 
 vim.keymap.set('n', '<leader>e', ':NvimTreeFindFileToggle<CR>')
+vim.keymap.set('n', '<leader>E', '::NvimTreeFocus<CR>')
 
