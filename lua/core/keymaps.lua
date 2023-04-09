@@ -42,4 +42,7 @@ vim.keymap.set('n', '<leader>rn', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left>
 -- Add Empty line below
 vim.keymap.set('n', '<CR>', 'o<esc>', { noremap = true })
 
+-- Tab handling
+vim.keymap.set('n', '<leader>tn', ':tabnew<CR>')
+vim.keymap.set('n', '<leader>tc', ':tabclose<CR>')
 
