@@ -1,2 +1,2 @@
-require('gruvbox')
-require('onedark')
+require('core.themes.gruvbox')
+require('core.themes.onedark')
