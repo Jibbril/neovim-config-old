@@ -64,8 +64,14 @@ return require('packer').startup(function(use)
 
   -- Debug Adapter Protocol
   use 'mfussenegger/nvim-dap'
+  use 'theHamsta/nvim-dap-virtual-text'
   use "mxsdev/nvim-dap-vscode-js"
-  use 'rcarriga/nvim-dap-ui'
+  use {
+    'rcarriga/nvim-dap-ui',
+    requires = {
+      'folke/neodev.nvim'
+    }
+  }
   use {
     "microsoft/vscode-js-debug",
     opt = true,

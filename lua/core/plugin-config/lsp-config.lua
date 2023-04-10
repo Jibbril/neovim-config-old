@@ -1,3 +1,14 @@
+-- Setup neodev.vim, used by nvim-dap-ui
+require('neodev').setup({
+  library = {
+    plugins = {
+      'nvim-dap-ui'
+    },
+    types = true
+  }
+})
+
+-- Setup language server protocol
 local lsp = require('lsp-zero')
 
 lsp.preset('recommended')

@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug dummy",
+      "cwd": "${workspaceFolder}",
+      "command": "node dummy.js",
+      "request": "launch",
+      "type": "node-terminal",
+      "envFile": "${workspaceFolder}/.vscode/.env",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "name": "Backend Service Plugin",
+      "cwd": "${workspaceFolder}",
+      "command": "NODE_ENV='plugin' npx cds serve ClientPortalService",
+      "request": "launch",
+      "type": "node-terminal",
+      "envFile": "${workspaceFolder}/.vscode/.env",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    }
+  ]
+}
