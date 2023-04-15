@@ -4,7 +4,7 @@
     {
       "name": "Debug dummy",
       "cwd": "${workspaceFolder}",
-      "command": "node dummy.js",
+      "command": "node dummy/dummy.js",
       "request": "launch",
       "type": "node-terminal",
       "envFile": "${workspaceFolder}/.vscode/.env",
