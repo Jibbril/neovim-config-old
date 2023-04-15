@@ -26,3 +26,5 @@ end)
 
 vim.keymap.set('n', '<leader>dc', ':lua load_launchjs("")<Left><Left>')
 
+-- Clear all breakpoints
+vim.cmd("command! DapClear lua require('dap').clear_breakpoints()")

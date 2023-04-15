@@ -65,18 +65,23 @@ return require('packer').startup(function(use)
   -- Debug Adapter Protocol
   use 'mfussenegger/nvim-dap'
   use 'theHamsta/nvim-dap-virtual-text'
-  use "mxsdev/nvim-dap-vscode-js"
   use {
     'rcarriga/nvim-dap-ui',
     requires = {
       'folke/neodev.nvim'
     }
   }
+
+  -- Java-/TypeScript
+  use "mxsdev/nvim-dap-vscode-js"
   use {
     "microsoft/vscode-js-debug",
     opt = true,
     run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out"
   }
+
+  -- Python
+  use 'mfussenegger/nvim-dap-python'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
