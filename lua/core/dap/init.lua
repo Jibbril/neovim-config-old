@@ -1,5 +1,5 @@
 require('core.dap.keymaps')
-require('core.dap.languages.javascript')
+require('core.dap.languages')
 require('nvim-dap-virtual-text').setup()
 require('core.dap.dap-ui')
 require('core.dap.launch-configs')
