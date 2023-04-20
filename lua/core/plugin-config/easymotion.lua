@@ -1,10 +1,6 @@
 vim.cmd([[
-  " Set default EasyMotion keys (use 's' as the leader key)
-  nmap s <Plug>(easymotion-prefix)
-
-  " Optional: Use two-character search motion
-  let g:EasyMotion_do_mapping = 0
-  nmap <Leader>ss <Plug>(easymotion-s2)
+  " Set default EasyMotion keys (use the leader key as a prefix)
+  nmap <Leader><Leader> <Plug>(easymotion-prefix)
 
   " Set EasyMotion marker colors and dimming
   hi EasyMotionTarget guifg=#56B6C2 " Set the color for one-character markers
