@@ -20,7 +20,8 @@ return require('packer').startup(function(use)
   use 'theprimeagen/harpoon'
   use 'mbbill/undotree'
   use 'tpope/vim-fugitive'
-
+  use 'github/copilot.vim'
+  use 'easymotion/vim-easymotion'
   -- Themes 
   -- use 'ellisonleao/gruvbox.nvim'
   use 'navarasu/onedark.nvim'

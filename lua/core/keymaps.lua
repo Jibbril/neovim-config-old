@@ -1,6 +1,9 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- Leave insert mode
+vim.keymap.set('i', 'jk', '<esc>')
+
 -- Close buffer
 vim.keymap.set('n', '<leader>c', ':bd<CR>')
 
@@ -45,4 +48,9 @@ vim.keymap.set('n', '<CR>', 'o<esc>', { noremap = true })
 -- Tab handling
 vim.keymap.set('n', '<leader>tn', ':tabnew<CR>')
 vim.keymap.set('n', '<leader>tc', ':tabclose<CR>')
+
+-- Jump to start/end
+vim.keymap.set('n', '<leader>h', '_')
+vim.keymap.set('n', '<leader>l', '$')
+
 
