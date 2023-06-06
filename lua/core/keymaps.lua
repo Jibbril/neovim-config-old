@@ -53,4 +53,9 @@ vim.keymap.set('n', '<leader>tc', ':tabclose<CR>')
 vim.keymap.set('n', '<leader>h', '_')
 vim.keymap.set('n', '<leader>l', '$')
 
+-- Jump 5 rows at a time.
+vim.keymap.set('n', '<c-k>', '5k')
+vim.keymap.set('n', '<c-j>', '5j')
+
+
 
