@@ -53,9 +53,13 @@ vim.keymap.set('n', '<leader>tc', ':tabclose<CR>')
 vim.keymap.set('n', '<leader>h', '_')
 vim.keymap.set('n', '<leader>l', '$')
 
+-- Bracket shortcuts
+vim.keymap.set('i', '<leader>cb', '{}<left>')
+vim.keymap.set('i', '<leader>sb', '[]<left>')
+
 -- Jump 5 rows at a time.
-vim.keymap.set('n', '<c-k>', '5k')
-vim.keymap.set('n', '<c-j>', '5j')
+vim.keymap.set('n', 'K', '5k', { noremap = true, silent = true })
+vim.keymap.set('n', 'J', '5j', { noremap = true, silent = true })
 
 
 
