@@ -199,6 +199,11 @@ _G.packer_plugins = {
     path = "/home/jibbril/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/home/jibbril/.local/share/nvim/site/pack/packer/start/vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
+  },
   ["vim-easymotion"] = {
     loaded = true,
     path = "/home/jibbril/.local/share/nvim/site/pack/packer/start/vim-easymotion",

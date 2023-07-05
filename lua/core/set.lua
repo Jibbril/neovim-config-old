@@ -13,7 +13,6 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.shiftround = true
 vim.opt.expandtab = true
-
 vim.opt.smartindent = true
 
 -- No vim backups, let undotree handle
@@ -33,5 +32,6 @@ vim.opt.isfname:append('@-@')
 vim.opt.updatetime = 60
 vim.opt.colorcolumn = '80,120'
 
-
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
 

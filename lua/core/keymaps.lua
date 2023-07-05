@@ -61,5 +61,3 @@ vim.keymap.set('i', '<leader>sb', '[]<left>')
 vim.keymap.set('n', 'K', '5k', { noremap = true, silent = true })
 vim.keymap.set('n', 'J', '5j', { noremap = true, silent = true })
 
-
-
